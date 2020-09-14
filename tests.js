@@ -239,7 +239,7 @@ const namePropertyIsString = () => {
 
 //REQ 3
 const applicant1HasAgeProperty = () => {
-    return applicant1Declared() && applicant1.hasOwnProperty('name');    
+    return applicant1Declared() && applicant1.hasOwnProperty('age');    
 }
 
 const agePropertyIsInteger = () => {
