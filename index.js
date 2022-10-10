@@ -34,10 +34,13 @@ Because all of this data is relevant to a single applicant, we want to use an ob
 */
 
 //1.    Create an object named "applicant1"
-const applicant1 = {};
+// const applicant1 = {};
 
 //2.    Add a "name" field to applicant1, and assign it a string value of your choosing
-
+const applicant1 = {
+     name: "Justin",
+     };
+    
 
 //3.    Add an "age" field to applicant1, and assign it a number between 0 and 122
 
