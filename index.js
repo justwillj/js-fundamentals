@@ -115,7 +115,8 @@ const applicant1CityC = applicant1.address.city;
 
 //9.    Replace the placeholder string with an expression that returns true if
 //      applicant1's age is greater than or equal to 18.
-let isApplicant1Eligible = 'placeholder';
+let isApplicant1Eligible = (applicant1.age) >= 18 
+
 
 //10.   Using the stubbed out function, "isEligibleApplicant", write code that returns
 //      whether or not the applicant at least 18 years old.
