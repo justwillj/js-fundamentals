@@ -37,13 +37,17 @@ Because all of this data is relevant to a single applicant, we want to use an ob
 // const applicant1 = {};
 
 //2.    Add a "name" field to applicant1, and assign it a string value of your choosing
-const applicant1 = {
-     name: "Justin",
-     };
+// const applicant1 = {
+    // name: "Justin",
+    // };
     
 
 //3.    Add an "age" field to applicant1, and assign it a number between 0 and 122
-
+const applicant1 = {
+    name: "Justin",
+    age: 22,
+     };
+    
 
 //4.    Add a "programStatus" field to applicant1, and assign it a string value of one of the following:
 //      ['Applied', 'Accepted', 'Active', 'Completed', 'Dismissed', 'Rejected']
