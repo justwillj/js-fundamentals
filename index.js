@@ -43,16 +43,21 @@ Because all of this data is relevant to a single applicant, we want to use an ob
     
 
 //3.    Add an "age" field to applicant1, and assign it a number between 0 and 122
-const applicant1 = {
-    name: "Justin",
-    age: 22,
-     };
+// const applicant1 = {
+   // name: "Justin",
+    // age: 22,
+    // };
     
 
 //4.    Add a "programStatus" field to applicant1, and assign it a string value of one of the following:
 //      ['Applied', 'Accepted', 'Active', 'Completed', 'Dismissed', 'Rejected']
 
-
+const applicant1 = {
+    name: "Justin",
+    age: 22,
+    programStatus: "Active",
+  };
+  
 /* 
 state, city, and zip code are all part of an address. It's extremely common for objects to contain other
 objects. Let's do that with address
