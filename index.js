@@ -121,7 +121,12 @@ let isApplicant1Eligible = (applicant1.age) >= 18
 //10.   Using the stubbed out function, "isEligibleApplicant", write code that returns
 //      whether or not the applicant at least 18 years old.
 const isEligibleApplicant = (applicant) => {
-    return false; //Change this logic!
+    if (applicant.age <= 17) {
+      return false; //Change this logic!
+  }
+     else {
+      return true;
+    }
 }
 
 //11.   Replace the placeholder string  with an expression that returns true if
