@@ -93,7 +93,7 @@ const applicant1 = {
 ////////////////////////////////////////////
 
 //6.    Uncomment the line that properly accesses applicant1's name
-// const applicant1NameA = applicant1.name;
+ const applicant1NameA = applicant1.name;
 // const applicant1NameB = 'Kjirsten';
 // const applicant1NameC = applicant1.getName();
 
