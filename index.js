@@ -107,7 +107,7 @@ const applicant1AgeB = applicant1['age'];
 //8.    Uncomment the line that properly accesses applicant1's city
 //const applicant1CityA = applicant1.city;
 //const applicant1CityB = applicant1.address;
-//const applicant1CityC = applicant1.address.city;
+const applicant1CityC = applicant1.address.city;
 
 /////////////////////////////////////////////////////
 //SECTION 3: Using object properties in expressions//
