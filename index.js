@@ -100,7 +100,7 @@ const applicant1 = {
 
 //7.    Uncomment the line that properly accesses applicant1's age
 //const applicant1AgeA = applicant1.getAge();
-//const applicant1AgeB = applicant1['age'];
+const applicant1AgeB = applicant1['age'];
 //const applicant1AgeC = applicant1.Age;
 
 
