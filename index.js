@@ -171,8 +171,8 @@ const copyArray = (array) => {
     return arrayCopy;
 }
 /*
-NOTE:
-A for/of loop syntax might be new to you. The above loop does the same thing as this one:
+NOTE:bove 
+A for/of loop syntax might be new to you. The aloop does the same thing as this one:
 for(let i = 0; i < array.length; i++) {
     const item = array[i];
     //push the current item into the array.
@@ -197,8 +197,12 @@ At the end of the array, check the variable that stored the running total.
 const runs = [0, 1, 4]; //This is just an example array that you can use to test your runsScored function
 const runsScored = (innings) => {
     //TODO: instantiate a variable to hold the total runs
-
+let totalRuns = 0;
     //TODO: Loop over the innings
+    for(let i = 0; i < innings.length; i++) {
+        totalRuns += innings[i];
+    } 
+    return totalRuns;
     //TODO: inside of the loop, add the current innings' run total to the totalRuns variable
 
     //TODO: Don't forget to return the totalRuns!
