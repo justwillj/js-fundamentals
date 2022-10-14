@@ -131,7 +131,7 @@ const isEligibleApplicant = (applicant) => {
 
 //11.   Replace the placeholder string  with an expression that returns true if
 //      applicant1's programStatus is "Active".
-let isApplicant1Active = 'placeholder';
+let isApplicant1Active = (applicant1.programStatus) >= 'Active';
 
 //12.   Using the stubbed out function, "isActiveApplicant", write code that returns
 //      whether or not the applicant is active.
