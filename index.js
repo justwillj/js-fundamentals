@@ -156,7 +156,7 @@ The next series of questions involves interacting with arrays.
 //13.   Given the following array, write code to access the first item
 const vegetables = ['bok choy', 'broccoli', 'brussels sprouts', 'cabbage', 'carrots', 'cauliflower', 'onion'];
 //TODO: Use bracket notation to assign the value of the first item in vegetables to firstVegetable .
-const firstVegetable = vegetables; //This line needs to change
+const firstVegetable = vegetables[0]; //This line needs to change
 
 //14.   Add 'cucumber' to vegetables using the .push array method. 
 
@@ -165,6 +165,7 @@ const firstVegetable = vegetables; //This line needs to change
 const copyArray = (array) => {
     const arrayCopy = [];
     for (const item of array) {
+        arrayCopy.push[i];
         //TODO: push the current item into the array.
     }
     return arrayCopy;
