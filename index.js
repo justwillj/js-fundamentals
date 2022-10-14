@@ -159,7 +159,7 @@ const vegetables = ['bok choy', 'broccoli', 'brussels sprouts', 'cabbage', 'carr
 const firstVegetable = vegetables[0]; //This line needs to change
 
 //14.   Add 'cucumber' to vegetables using the .push array method. 
-
+vegetables.push("cucumber");
 
 //15.   Make a copy of an array using a for loop and the .push method. The loop has been created for you.
 const copyArray = (array) => {
