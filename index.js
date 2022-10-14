@@ -136,8 +136,13 @@ let isApplicant1Active = (applicant1.programStatus) >= 'Active';
 //12.   Using the stubbed out function, "isActiveApplicant", write code that returns
 //      whether or not the applicant is active.
 const isActiveApplicant = (applicant) => {
-    return false;
-}
+    if(applicant.programStatus == 'Active') {
+    return true;
+    } 
+    else {
+        return false;
+    }
+} 
 
 //////////////////////////////////////
 //SECTION 4: Interacting with Arrays//
