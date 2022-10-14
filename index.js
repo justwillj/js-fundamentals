@@ -165,8 +165,8 @@ vegetables.push("cucumber");
 const copyArray = (array) => {
     const arrayCopy = [];
     for (const item of array) {
-        arrayCopy.push[i];
         //TODO: push the current item into the array.
+        arrayCopy.push(item);
     }
     return arrayCopy;
 }
