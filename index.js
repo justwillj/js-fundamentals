@@ -238,5 +238,12 @@ const filterApplicantsByEligibility = (applicants) => {
 //      that you already wrote the logic for a single applicant in the 
 //      isActiveApplicant function.
 const filterApplicantsByProgramStatus = (applicants) => {
-    return []; //TODO: fill in the correct logic for this function
-}
+    const arrayActive = [];
+    for(const item of applicants){
+        if(item.programStatus === 'Active'){
+            arrayActive.push(item);
+        }
+      } 
+      return arrayActive;
+    }
+  
