@@ -226,9 +226,14 @@ Push an object to an array
 //      Remember that you already wrote logic to determine if a single applicant
 //      is eligible in the isEligibleApplicant function.
 const filterApplicantsByEligibility = (applicants) => {
-    return []; //TODO: fill in the correct logic for this function
-}
-
+    const arrayHold = [];
+    for(const item of applicants){
+        if(item.age >= 18){
+            arrayHold.push(item);
+        }
+      } 
+      return arrayHold;
+    }
 //18.   Given an array of applicants, return an array of active students. Remember
 //      that you already wrote the logic for a single applicant in the 
 //      isActiveApplicant function.
