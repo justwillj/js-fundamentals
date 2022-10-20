@@ -71,6 +71,9 @@ objects. Let's do that with address
     zipCode: 21201
 }
 */
+/**
+ * CODE REVIEW: Don't consolidate explicit requirements! You were headed in the right direction above. This first part was so you would get practice adding properties/fields to an already created object, not creating an object literal. 
+ */
 const applicant1 = {
   name: "Justin",
   age: 22,
@@ -121,6 +124,9 @@ let isApplicant1Eligible = (applicant1.age) >= 18
 //10.   Using the stubbed out function, "isEligibleApplicant", write code that returns
 //      whether or not the applicant at least 18 years old.
 const isEligibleApplicant = (applicant) => {
+    /**
+     * CODE REVIEW: since the expression applicant.age >= 18 is a comparison, it will be either true or false based on the parameter applicant age field, so we can simplify this logic to just return the expression and it behaves the same way as an if/else statement with the same condition. Your condition is a bit backwards, we want the code to work for us, not us work for the code  
+     */
     if (applicant.age <= 17) {
       return false; //Change this logic!
   }
@@ -131,6 +137,7 @@ const isEligibleApplicant = (applicant) => {
 
 //11.   Replace the placeholder string  with an expression that returns true if
 //      applicant1's programStatus is "Active".
+/**CODE REVIEW: this particular comparison is not the best comparison operator to use, instead we would want == (equals) or === (strictly equals) */
 let isApplicant1Active = (applicant1.programStatus) >= 'Active';
 
 //12.   Using the stubbed out function, "isActiveApplicant", write code that returns
@@ -199,6 +206,10 @@ const runsScored = (innings) => {
     //TODO: instantiate a variable to hold the total runs
 let totalRuns = 0;
     //TODO: Loop over the innings
+    /**
+     * CODE REVIEW: when we use loops that do not require the index (i) for anything other than counting the loop, we want to focus on using the symantic for/of loop. It operates the same as a for(i) loop without us having to keep track of the index (i), the condition, and accessing the array at a particular index. 
+     * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+     */
     for(let i = 0; i < innings.length; i++) {
         totalRuns += innings[i];
     } 
@@ -226,8 +237,11 @@ Push an object to an array
 //      Remember that you already wrote logic to determine if a single applicant
 //      is eligible in the isEligibleApplicant function.
 const filterApplicantsByEligibility = (applicants) => {
+    /*CODE REVIEW: be mindful of your variable names. Name your variable after what it is holding onto. In this case our array of eligible applicants should be something like: eligibleApplicants = []; */
     const arrayHold = [];
     for(const item of applicants){
+        /*CODE REVIEW: since we already created a function that will return true or false based on an applicant parameters age, we can call the function instead of repeat logic. That way our code is consolidated and we are not having to debug logic in multiple places if something goes wrong.
+        */
         if(item.age >= 18){
             arrayHold.push(item);
         }
